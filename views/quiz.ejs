@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/vnd.icon" href="./img/favicon.ico" />
+    
+    <script src="https://kit.fontawesome.com/0e61696ddf.js" crossorigin="anonymous"></script>
+
+    <title>Andy`s Quiz</title>
+    <link rel="stylesheet" href="./style/quiz.css">
+  </head>
+  <body oncontextmenu="return false">
+    <div class="mainContainer">
+      <h1 class ="headline">Andy`s Quiz</h1>
+
+
+      <div class="quizContainer">
+          <div class="quizContainerHeader">
+            <select id="categorySelect"></select>
+            <select id="numbersSelect"></select>
+          </div>
+
+          <div class="quizContainerBody">
+            <h2 class="questionContainer"></h2>
+            <div class="answerContainer"></div>            
+          </div>
+
+          <div class="quizContainerFooter">
+            <div class="statusContainer"></div>
+            <div class="resultContainer"></div>
+            <div class="newGameButton">Neues Spiel?</div>
+          </div>
+      </div>    
+      <p class="copyright">Copyright &copy; 2024 Andreas Huning </p> 
+</div>
+
+
+<script>
+  let quizArr = <%- JSON.stringify(quiz) %>;
+</script>
+<script src="./js/quiz.js"></script>
+  </body>
+</html>

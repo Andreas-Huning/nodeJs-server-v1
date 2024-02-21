@@ -1,0 +1,119 @@
+@charset "utf-8";
+@font-face{
+	font-family: roboto;
+	src:url("../fonts/roboto/Roboto-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /*Variablen anlegen*/
+    --background-color:#fcd62f ;
+    --text-color:#314453;
+}
+body{   
+    background-color: grey;
+  
+}
+.mainContainer{
+    width: clamp(350px, 90vw,1400px);
+    min-height: 90vh;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: roboto;
+    text-align: center;
+}
+
+.copyright{
+	text-align: center;
+	margin: 10px;
+	margin-bottom: 0px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: var(--text-color);
+	color: var(--background-color);
+  }
+
+.quizContainer select {
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  min-width: 35%;
+}
+
+.quizContainerHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quizContainerBody {
+  margin: 15px;
+}
+
+.answerButton {  
+  margin: 15px;
+  padding: 10px;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  border: 1px solid var(--text-color);
+  border-radius: 15px;
+  transition: all 400ms;
+}
+.answerButton:hover {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+.quizContainerFooter {
+  margin: 15px;
+}
+.statusContainer{
+    font-size: 1.5em;
+    color: red;
+    margin: 15px auto;
+}
+.resultContainer{
+    font-size: 1.5em;
+    margin: 15px auto;
+}
+.newGameButton{
+    margin: 15px;
+    padding: 10px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border: 1px solid var(--text-color);
+    border-radius: 15px;
+    transition: all 400ms; 
+}
+.newGameButton:hover{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+@media screen and (max-width: 575px) {
+
+  .mainContainer{
+      width: 100%;
+  }
+  .navigation li{
+      width: 100%;
+  }
+  .navigation li a{
+      display: block;
+  }   
+
+  .menueBarContainer{
+      display: flex;
+  }
+  /* .alphabetContainer button{
+      margin: 5px;
+      padding: 5px;
+  } */
+}
