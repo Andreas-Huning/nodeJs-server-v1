@@ -12,10 +12,6 @@ let hangmanDbData;
 //{ force: true } am ende entfernen
 models.sequelize.sync({ force: true }).then(() => {
 //-------------------------------------Löschen---------------------------------------------------------
-  
-
-     
-
 models.QuizDB.bulkCreate([ 
     {
       cat: "Hauptstadt",
