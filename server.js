@@ -3,7 +3,7 @@ import models from "./models/db.js";
 
 const server = express();
 const IP = "localhost";
-const PORT = 80;
+const PORT = 8080;
 server.use(express.urlencoded({ extended: false }));
 let userOne;
 let quizDbData;
